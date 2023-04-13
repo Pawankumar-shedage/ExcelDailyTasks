@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+<!-- Nav Bar -->
+<h2>Nav BAR</h2>
+<nav>
+    <a href="home.html" target="_blank">HOME</a>
+    <a href="home.html"target="_blank">ABOUT</a>
+    <a href="home.html"target="_blank">CONTACT</a>
+</nav>
+
+<!-- Day 2 tasks 11th Tuesday April -->
+ <h1>DAY 2 </h1>
+
+    <!-- Nested lists  -->
+
+    <h3>Nested Lists</h3>
+    <ol start="5" >
+        <li>
+            Module 1
+            <ul>
+                <li>One</li>
+                <li>Two</li>
+                <li>Three</li>
+            </ul>
+        </li>
+        <li>
+            Module 2
+            <ul>
+                <li>Four</li>
+                <li>Five</li>
+                <li>Six</li>
+            </ul>
+        </li>
+    </ol>
+    <!-- Anchor tag to navigate, on the same page. -->
+
+<h1>Table of contents</h1>
+<a href="#Topic1">Click here to jump to topic 1</a>
+<br> <br>
+<a href="#Topic2">Click here to jump to topic 2</a>
+
+<p id="Topic1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem exercitationem distinctio fuga recusandae amet ut dolorem deserunt vel officia tempore repudiandae suscipit at, nulla voluptates. Perferendis adipisci praesentium culpa earum iste unde aspernatur consectetur nesciunt minus deleniti, delectus repellat obcaecati, recusandae eveniet temporibus eius vitae tempora nisi ex minima fuga voluptatibus mollitia vel? Magni, quae quia voluptatum facilis provident tempore tenetur, possimus exercitationem dolorem similique quod in repellat accusamus porro qui eum iste distinctio cum commodi voluptas optio error! Doloribus non reiciendis officia animi aut quasi nisi ut tempora velit, nemo quis minus eveniet officiis facere nobis voluptates fuga iure </p>
+
+<p  id="Topic2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis nam voluptates rem corporis saepe voluptas officia magni itaque aut eum, qui, perspiciatis nostrum illum. Ipsam cum, mollitia laudantium corporis assumenda debitis animi, repellendus itaque quidem soluta ullam quia maxime! Omnis sunt magni rem totam, at similique temporibus nobis architecto. Quisquam.</p>
+
+
+
+<!-- anchor tag -> mailto  -->
+<h3>Send an email.</h3>
+<button><a href="mailto:pawankumarshedage@gmail.com">Connect with me!</a></button>
+<br><br>
+
+<!-- Adding Images -->
+<h3>Images</h3>
+
+<img src="/Images/basketball-player-uhd-8k-wallpaper.jpg" alt="basketball Image"
+title="a man holding basketball" style="cursor:cell;" height="500px" width="500px" >
+
+
+
+<!-- anchor tag, target attribute: 1) _blank
+2)_parent
+3)_self 
+Value	Description
+_blank	Opens the linked document in a new window or tab
+_self	Opens the linked document in the same frame as it was clicked (this is default)
+_parent	Opens the linked document in the parent frame
+_top	Opens the linked document in the full body of the window
+framename	Opens the linked document in the named iframe-->
+
+<h2>HTML FORMS</h2>
+
+<form>
+    <label for="fname">First name</label>
+    <input type="text" id="fname"> <br><br>
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname"><br>
+
+    <label for="langs">Programming Languages </label>
+    <br>
+    <input type="radio" id="langs">
+    <label for="">C++</label><br>
+
+    <input type="radio" id="langs">
+    <label for="">JAVA</label><br>
+
+    <input type="radio" id="langs">
+    <label for="">SQL</label><br>
+    <hr>
+
+    <label for="frontEnd">FrontEnd languages</label><br>
+    <input type="checkbox" id="frontEnd">
+    <label for="HTML">HTML</label><br>
+
+    <input type="checkbox" id="frontEnd">
+    <label for="CSS" >CSS</label><br>
+
+    <input type="checkbox" id="frontEnd">
+    <label for="CSS">JavaScript</label><br>
+
+    <!-- Dropdown -->
+
+    <h3>Choose a language</h3>
+    <span>Mother tongue</span>
+    <select name="lang" >
+        <option value="languages" selected="selected">Types of Languages</option>
+        <option value="English" >English</option>
+        <option value="Hindi">Hindi</option>
+        <option value="Marathi">Marathi</option>
+    </select>
+    <br><br>
+
+
+    <input type="Submit" value="Submit">
+
+</form>
+
+<h3>Form Tasks DAY 2 </h3>
+<!-- User login 1, Comapany Login -->
+
+<form>
+    <label for="name">UserName:</label> <br>
+    <input type="text"><br>
+    <label for="name">Password:</label> <br>
+    <input type="password"><br><br>
+    <input type="submit" value="Login">
+</form>
+
+<hr ><hr>
+
+<h3>From with border</h3>
+
+<form >
+    <fieldset>
+        <legend>Personal Details</legend>
+        <label for="firstName">First Name</label><br>
+        <input type="text"><br>
+
+        <label for="LastName">Last Name</label><br>
+        <input type="text"><br>
+    </fieldset>
+
+    <fieldset>
+        <legend>Poin of Contact</legend>
+        <label for="Mobile No">Mobile No:</label><br>
+        <input type="text"><br>
+
+        <label for="Email">Email ID:</label><br>
+        <input type="email"><br>
+    </fieldset>
+
+    <fieldset>
+        <legend>Address Details</legend>
+        <label for="Add">Current Address</label><br>
+        <input type="color" value="#ff0000"> <input type="text"><br>
+
+        <label for="PermAdd">Permanent Addres</label><br>
+        <input type="add">
+
+    </fieldset>
+
+    <br>
+    <h4>Timings</h4>
+    <form >
+    
+        <input type="week" >
+        <br><br>
+        <input type="datetime-local">
+    
+    </form>
+    <br><br>
+
+    <input type="submit" value="Submit Form">
+</form>
+<hr>
+
+
+
+
+
+
+
+
+<p><a href="demo.html" target="_blank">Day 1 Assignments</a></p>
+
+
+</body>
+</html>
