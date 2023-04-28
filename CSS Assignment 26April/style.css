@@ -1,0 +1,148 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+header{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient( rgba(0,0,0,0.4) , rgba(0,0,0,0.15)),url(./taj.avif);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+nav{
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    background: rgba(0,0,0,0.2);
+    color: white;
+    align-items: center;
+    justify-content: space-around;
+    text-transform: uppercase;
+}
+
+ nav .leftMenu{
+    width: 20%;
+    text-align: center;
+}
+
+nav .rightMenu{
+    width: 40%;
+    display:flex;
+    justify-content:space-around
+}
+
+nav .rightMenu a:first-child{
+    color:greenyellow
+}
+
+a {
+    width: 25%;
+    text-decoration: none;
+    color: inherit;
+}
+
+main{
+    width: 100%;
+    height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+section h3{
+   text-align: center;
+    font-size: 35px;
+    font-weight: 200;
+    letter-spacing: 3px;
+    text-shadow: 1px 1px 3px black;     
+    /* text-shadow: h-shadow v-shadow blur-radius color|none|initial|inherit;  [horizontal shadow, vertical shadow, blurr radius of shadow, color of shadow]. */
+}
+
+
+
+section h1{
+    /* margin-top margin-right margin-bottom margin-left */
+    margin: 30px 0 20px 0;
+    font-size:55px;
+    font-weight:700;
+    text-shadow: 2px 2px 5px black ;
+    text-transform: uppercase;
+}
+
+section p{
+    font-size: 28px;
+    word-spacing: 3px;
+    margin-bottom: 25px;
+    text-shadow: 1px 1px 1px black;
+    text-align: center;
+
+}
+
+section a{
+    padding: 12px 30px;
+    border-radius: 4px;
+    outline: none;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    transition: all 0.5 ease;
+}
+
+
+
+section  .btn1{
+    background: white;
+    color:#000;
+}
+
+section  .btn2{
+    background: rgb(130, 255, 130);
+    color:#000;
+}
+
+.btn1:hover{
+    background: rgb(130, 255, 130);
+    color: white;
+}
+
+.btn2:hover{
+    background: #fff;
+    color:black;
+}
+
+.change_content:after{
+    content:" ";
+    animation: changetext 5s infinite linear;
+    color: aquamarine;
+}
+
+
+/* @keyframes -> to play with animations  */
+
+@keyframes changetext {
+    0%{
+        content: "Pune";
+    }
+    25%{
+        content: "Mumbai";
+    }
+    50%{
+        content: "Delhi";
+    }
+    75%{
+        content: "Nashik";
+    }
+    100%{
+        content: "Punjab";
+    }
+}
