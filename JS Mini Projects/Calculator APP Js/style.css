@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    background-color: #f42b03;
+    background-image: linear-gradient(316deg, #f42b03 0%, #ffbe0b 74%);
+}
+
+
+
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+
+    /* background-color: rgb(255, 225, 0); */
+    /* background-color: #ff4e00;
+    background-image: linear-gradient(315deg, #ff4e00 0%, #ec9f05 74%); */
+
+    /* Trial */
+        /* background-color: #f42b03;
+        background-image: linear-gradient(316deg, #f42b03 0%, #ffbe0b 74%); */
+
+        /* background-color: #00b712;
+        background-image: linear-gradient(315deg, #00b712 0%, #5aff15 74%); */
+        
+}
+
+.calci{
+    padding: 5px 10px;
+    background-color: #4C4C6D;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+.calci form input{
+    border: 0px;
+    border-radius: 10px;
+    width: 60px;
+    height: 60px;
+    margin: 10px;
+    font-size: 20px;
+    background:transparent;
+    font-weight: bold;
+    color:#fff;
+
+    box-shadow: -8px -8px 15px rgba(255,255,255,0.1), 5px 5px 15px rgba(0,0,0,0.2);
+}
+
+form .output{
+    display: flex;
+    justify-content: flex-end;
+    margin: 20px 0;
+    /* width: auto; */
+}
+
+form .output input{
+    text-align: right;
+    font-size: 45px;
+    flex: 1;
+    box-shadow:none;
+
+
+    /* to learn about box-sizing */
+}
+
+form input.equal{
+    width: 150px;;
+}
+
+form input.special_btn{
+    /* color:rgb(36, 248, 36) */
+    /* background-color: rgb(70, 189, 70); */
+    background-color:#16FF00;
+}
+
+form input.special_btn.ac_btn{
+    /* color:rgb(36, 248, 36) */
+    background-color: rgb(255, 0, 0);
+}
+form input.special_btn.del_btn{
+    /* color:rgb(36, 248, 36) */
+    background-color:#f46303;
+}

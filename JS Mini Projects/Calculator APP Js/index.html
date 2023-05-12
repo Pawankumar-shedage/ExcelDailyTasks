@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator mini project</title>
+
+    <!-- style -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Boot -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+
+
+</head>
+<body>
+
+    <!-- <h1 class="text-center" style="overflow: hidden;">K</h1>
+        Task to bring inside contaier but at top of it.
+    -->
+
+    <div class="container">
+                
+        
+        <div class="calci">
+
+            <form action="">
+                    <div class="output">
+                        <input name="result" type="teXt">
+                    </div>
+
+                    <div>
+                        <input type="button" value="AC" onclick="result.value =' '  "  class="special_btn ac_btn"
+                        onkeydown="fun1()" >
+
+                        <input type="button" value="DEL" onclick="result.value = result.value.toString().slice(0,-1)" class="special_btn del_btn">
+                        <input type="button" value="."  onclick=" result.value +='.' ">
+                        <input type="button" value="/"  onclick=" result.value +='/' ">
+                    </div>
+                    <div>
+                        <input type="button" value="7" onclick=" result.value  +='7' ">
+                        <input type="button" value="8"  onclick=" result.value +='8' ">
+                        <input type="button" value="9"  onclick=" result.value +='9' ">
+                        <input type="button" value="X"  onclick=" result.value +='*' ">
+                    </div>
+                    <div>
+                        <input type="button" value="4"  onclick=" result.value +='4' ">
+                        <input type="button" value="5"  onclick=" result.value +='5' ">
+                        <input type="button" value="6"  onclick=" result.value +='6' ">
+                        <input type="button" value="+"  onclick=" result.value +='+' ">
+                    </div>
+                    <div>
+                        <input type="button" value="1"  onclick=" result.value +='1' ">
+                        <input type="button" value="2"  onclick=" result.value +='2' ">
+                        <input type="button" value="3"  onclick=" result.value +='3' ">
+                        <input type="button" value="-"  onclick=" result.value +='-' ">
+                    </div>
+                    <div>
+                        <input type="button" value="00" onclick=" result.value +='00' ">
+                        <input type="button" value="0" onclick=" result.value +='0' ">
+                        <input type="button" class="equal special_btn"  value="="
+                              onclick="result.value = eval(result.value) "  >
+
+                        
+                        <!-- Imp eval() function!.. -->
+                    </div>
+
+            </form>
+        </div>
+    </div>
+    
+
+
+    <script>
+        function fun1()
+{
+    document.write("Pressed a key")
+}
+    </script>
+</body>
+</html>
