@@ -1,0 +1,52 @@
+
+body{
+    box-sizing:border-box;
+
+    background-color: #44b09e;
+    background-image: linear-gradient(315deg, #44b09e 0%, #e0d2c7 74%);
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}   
+
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    
+}
+
+input.box{
+    height: 300px;
+    width: 220px;
+    border-radius: 5%;
+    /* padding: 40px; */
+    font-size: 150px;
+    background: rgba(0,0,0,0.2);
+}
+
+
+
+
+
+span#semi-colon{
+    font-size: 150px;
+    color: rgb(0, 0, 0);
+    
+}
+
+@media screen and (max-width: 768px) {
+    .main{
+        /* background-color: red; */
+    }
+}
